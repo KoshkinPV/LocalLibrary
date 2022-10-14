@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Loval Library Home</h1>
+
+    <p>Welcom to <em>Local Library</em>, a very basic Django website developed as a tutorial example.</p>
+<h2>Dynamic content</h2>
+
+    <p>The librory has the following record counts: </p>
+    <ul>
+        <li><strong>Books:</strong> {{ num_books }}</li>
+        <li><strong>Copies:</strong> {{ num_intance }}</li>
+        <li><strong>Copies available:</strong> {{ num_intance_available }}</li>
+        <li><strong>Authors:</strong> {{ num_authors }}</li>
+    </ul>
+{% endblock %}
